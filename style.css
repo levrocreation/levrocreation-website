@@ -1,16 +1,19 @@
 body {
-  background-image: url("download (1)");
+background-color: #C2DFFF;
+ background-image: url("download");
   background-size: cover;
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
- font-family: Georgia, sans-serif;
+  font-family: GEORGIA, sans-serif;
+  color: white;
   text-align: center;
   padding: 50px;
 }
 
 h1 {
   color: #0020c2;
- font-size: 48px;
+ font-size: 48px
+
 }
 
 p {
