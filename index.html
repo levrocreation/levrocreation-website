@@ -1,23 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css" />
-  <meta charset="UTF-8" />
-  <meta name="LEVRO" content="width=device-width, initial-scale=1.0" />
-  <title>LEVRO CREATION</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-</link rel="stylesheet" href="style.css" />
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-<script src="script.js"></script>
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
 
-  <img src="" alt="LC" width="400" />
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
 
-  <h1>WELLCOME TO LEVRO CREATION</h1>
+        nav a:hover {
+            background-color: #555;
+        }
 
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
 
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
 
-  <p>Design created by _x.humxid_</p>
- 
-   <p1>CONTACT US +94 77 893 0178</p1>
-</script src="script.js"></script>
+        .container {
+            padding: 20px;
+        }
 
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .portfolio-item h3 {
+            padding: 10px;
+            font-size: 1.2rem;
+            background-color: #444;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>X DESIGN</h1>
+        <p>Graphic Designer | M.S.M HUMAID</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Designing Your Visual Identity</h1>
+            <p>Creating memorable and impactful designs for businesses and brands.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="container" id="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="portfolio1.jpg" alt="Project 1">
+                <h3>Project One</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio2.jpg" alt="Project 2">
+                <h3>Project Two</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+            </div>
+            <!-- Add more portfolio items here -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container" id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Humaid, a passionate graphic designer with oveR 1 years of experience. I specialize in creating brand identities, logos, posters and digital art that resonate with audiences. My goal is to help brands stand out through creative design.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you're looking to collaborate or need a custom design, feel free to reach out. I'd love to work with you!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required><br><br>
+            <input type="email" placeholder="Your Email" required><br><br>
+            <textarea placeholder="Your Message" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 _x.humxid_ - All Rights Reserved</p>
+    </footer>
+
+</body>
 </html>
