@@ -1,27 +1,172 @@
-body {
-background-color: #C2DFFF;
- background-image: url("download");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: GEORGIA, sans-serif;
-  color: white;
-  text-align: center;
-  padding: 50px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-h1 {
-  color: #0020c2;
- font-size: 48px
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-}
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
 
-p {
-  font-size: 20px;
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
 
-  color: #52595D;
-}
-p1
-{
-color: #cb6d51;
-}
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .portfolio-item h3 {
+            padding: 10px;
+            font-size: 1.2rem;
+            background-color: #444;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>John Doe</h1>
+        <p>Graphic Designer | Visual Artist</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Designing Your Visual Identity</h1>
+            <p>Creating memorable and impactful designs for businesses and brands.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="container" id="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="portfolio1.jpg" alt="Project 1">
+                <h3>Project One</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio2.jpg" alt="Project 2">
+                <h3>Project Two</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio3.jpg" alt="Project 3">
+                <h3>Project Three</h3>
+            </div>
+            <!-- Add more portfolio items here -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container" id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm John Doe, a passionate graphic designer with over 5 years of experience. I specialize in creating brand identities, logos, and digital art that resonate with audiences. My goal is to help brands stand out through creative design.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you're looking to collaborate or need a custom design, feel free to reach out. I'd love to work with you!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required><br><br>
+            <input type="email" placeholder="Your Email" required><br><br>
+            <textarea placeholder="Your Message" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 John Doe - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
